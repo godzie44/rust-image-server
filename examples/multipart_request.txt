@@ -1,0 +1,4 @@
+curl --request PUT \
+  --url http://127.0.0.1:8088/images \
+  --form 'file[]=@./rust-logo-blk.png' \
+  --form 'uri[]=https://www.rust-lang.org/static/images/rust-logo-blk.png'
