@@ -7,7 +7,7 @@
 docker build -t imgpool .
 docker run --rm --name imgpool --network="host" -v "$PWD/uploads":/uploads imgpool
 ````
-Сервер станет доступен по адрессу http://127.0.0.1:8088/images
+Сервер станет доступен по адрессу http://127.0.0.1:8088/images (изображения будут находится в папке uploads)
 
 # Инфо
 
