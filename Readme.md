@@ -1,6 +1,7 @@
-#Image pool - сервер для загрузки изображений, основан на actix-web.
+# Image pool - сервер для загрузки изображений, основан на actix-web.
 
-#Запуск (docker):
+# Запуск (docker):
+
 Из директории с проектом:
 ```` 
 docker build -t imgpool .
@@ -8,7 +9,8 @@ docker run --rm --name imgpool --network="host" -v "$PWD/uploads":/uploads imgpo
 ````
 Сервер станет доступен по адрессу http://127.0.0.1:8088/images
 
-#Инфо
+# Инфо
+
 Поддерживаются форматы png и jpg. Graсeful shutdown - 30 сек после kill -15 (SIGTERM).
 Сервер обрабатывает Put запросы с content-type application/json или multipart/form-data.<br>
 Json:
@@ -63,7 +65,8 @@ uri[] = ...
     }
   }
 ````
-#Тесты
+# Тесты
+
 Сервер:
 ```` 
 docker exec -it imgpool bash -c "cd \img-pool && cargo test"
